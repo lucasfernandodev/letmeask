@@ -17,7 +17,7 @@ type RoomParams = {
   id: string;
 };
 
-export function Room() {
+export function AdminRoom() {
   const { user } = useAuth();
   const [newQuestion, setNewQuestion] = useState("");
   const params = useParams<RoomParams>();
@@ -57,7 +57,10 @@ export function Room() {
       <header>
         <div className="content">
           <img src={logoImg} alt="Letmeask" />
+          <div>
           <RoomCode code={roomId} />
+          <Button isOutlined>Encerrar</Button>
+          </div>
         </div>
       </header>
 
@@ -66,30 +69,7 @@ export function Room() {
           <h1>Sala {title}</h1>
           {questions.length > 0 && <span>{questions.length} pergunta(s)</span>}
         </div>
-        <form onSubmit={handleCreateSendQuestion}>
-          <textarea
-            placeholder="O que você quer perguntar?"
-            onChange={(event) => setNewQuestion(event.target.value)}
-            value={newQuestion}
-          />
-
-          <div className="form-footer">
-            {user ? (
-              <div className="user-info">
-                <img src={user.avatar} alt={user.name} />
-                <span>{user.name}</span>
-              </div>
-            ) : (
-              <span>
-                {" "}
-                Para enviar uma pergunta, <button> faça seu login</button>{" "}
-              </span>
-            )}
-            <Button type="submit" disabled={!user}>
-              Enviar pergunta
-            </Button>
-          </div>
-        </form>
+        
 
 
         <div className="question-list">
