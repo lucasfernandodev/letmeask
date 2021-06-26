@@ -1,7 +1,7 @@
 
 </p>
 <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./.github/assets/capa.png" width="500px"/>
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./logo.svg" width="500px"/>
 </h1>
 
 <h4 align="center"> 
