@@ -5,7 +5,7 @@
 </h1>
 
 <h4 align="center"> 
-	🚧  Letmeask 💭 Em andamento 🚀 🚧
+	Letmeask
 </h4>
 
 <p align="center">
@@ -26,7 +26,6 @@
 Projeto desenvolvido durante a **NLW - Next Level Week** oferecida pela [Rocketseat](https://blog.rocketseat.com.br/primeira-next-level-week/).
 O NLW é uma experiência online com muito conteúdo prático, desafios e hacks onde o conteúdo fica disponível durante uma semana.
 
----
 
 ## 📚 Atividades realizadas
 
@@ -84,7 +83,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ```bash
 
 # Clone este repositório
-$ git clone git@github.com:MarconWillian/letmeask.git
+$ git clone git@github.com:lucasfernandodev/letmeask.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
 $ cd letmeask
@@ -127,7 +126,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <a href="https://lucasfernando.dev/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/20525486?v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Marcon Willian</b></sub></a> <a href="https://lucasfernando.dev" title="Lucas Fernando">🚀</a>
+ <sub><b>Lucas Fernando</b></sub></a> <a href="https://lucasfernando.dev" title="Lucas Fernando">🚀</a>
  <br />
 
 ---
@@ -136,4 +135,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Este projeto esta sobe a licença [MIT](./LICENSE).
 
-Feito com 💜 por Marcon Willian 👋 [Entre em contato!](https://www.linkedin.com/in/lucas-fernando-a19ab5213/)
+Feito com 💜 por Lucas Fernando 👋 [Entre em contato!](https://www.linkedin.com/in/lucas-fernando-a19ab5213/)
