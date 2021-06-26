@@ -65,7 +65,7 @@ Bônus
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./.github/assets/pagina-inicial.png" width="400px">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./letmeask-dev.web.app_.png" width="400px">
 
 </p>
 
