@@ -65,7 +65,7 @@ Bônus
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./letmeask-dev.web.app_.png" width="400px">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./letmeask-dev.web.app_.png" width="850px">
 
 </p>
 
@@ -111,12 +111,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
 
 > Veja o arquivo  [package.json](./package.json)
-
-#### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
-
--   Protótipo:  **[Figma](https://www.figma.com/)**  →  **[Protótipo (Letmeask)](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask)**
--   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**  → Extensions:  **[SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)**
--   Markdown:  **[StackEdit](https://stackedit.io/)**,  **[Markdown Emoji](https://gist.github.com/rxaviers/7360908)**
 
 
 ---
