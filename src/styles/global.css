@@ -9,11 +9,24 @@
 :root {
   --white-background: #F8F8F8;
   --white-details: #FEFEFE;
+  --white: #fff;
   --purple: #835AFD;
   --purple-hover: #6F4BD8;
   --red: #EA4335;
+  --black: #29292E;
 
   --gray-medium: #A8A8B3;
+
+  --input-color: #29292E;
+
+  /* Dark */
+/* 
+  --white-background: #151515;
+  --white-details: #121212;
+  --white: #090909;
+  --gray-medium: #323233;
+
+  --input-color: #FEFEFE; */
 }
 
 html {

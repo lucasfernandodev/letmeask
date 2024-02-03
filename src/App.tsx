@@ -3,8 +3,8 @@ import { Homepage } from "./pages/Homepage";
 import { NewRoom } from "./pages/NewRoom";
 import { Room } from "./pages/Room";
 import { AuthContextProvider } from "./contexts/AuthContext";
-import { AdminRoom } from "./pages/AdminRoom";
 import './styles/global.css';
+import { AdminRoom } from "./pages/AdminRoom";
 
 function App() {
   return (

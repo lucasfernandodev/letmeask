@@ -1,10 +1,12 @@
+import style from './style.module.css';
 import { Link, useHistory } from "react-router-dom";
 import { FormEvent, useState } from "react";
 import ilustationImg from "../assets/images/illustration.svg";
-import logoImg from "../assets/images/logo.svg";
-import { Button } from "../components/Button";
-import { database } from "../services/firebase";
-import { useAuth } from "../hooks/useAuth";
+import logoImg from "../../assets/images/logo.svg";
+import { Button } from "../../components/Button";
+import { database } from "../../services/firebase";
+import { useAuth } from "../../hooks/useAuth";
+import { Illustration } from '../../components/Ilustration';
 
 export function NewRoom() {
 
@@ -31,17 +33,10 @@ export function NewRoom() {
   }
 
   return (
-    <div id="page-auth">
-      <aside>
-        <img
-          src={ilustationImg}
-          alt="Ilustração sinbolizando perguntas e respostas"
-        />
-        <strong>Crie salas de Q&amp;A ao-vivo</strong>
-        <p>Tire as duvidas da sua audiencia em tempo real.</p>
-      </aside>
+    <div id="page-auth" className={style.newRoom}>
+      <Illustration />
       <main>
-        <div className="main-content">
+        <div className={style["main-content"]}>
           <img src={logoImg} alt="Letmeask" />
           <h2>Criar uma nova sala</h2>
           <form onSubmit={handleCreateRoom}>
