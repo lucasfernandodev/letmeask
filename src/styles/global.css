@@ -1,0 +1,48 @@
+*,
+*::after,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-background: #F8F8F8;
+  --white-details: #FEFEFE;
+  --purple: #835AFD;
+  --purple-hover: #6F4BD8;
+  --red: #EA4335;
+
+  --gray-medium: #A8A8B3;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  background: var(--white-background);
+  height: 100%;
+}
+
+body,
+input,
+button {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+
+button,  input{
+  height: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
