@@ -3,7 +3,6 @@ import {useHistory} from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 
 import {Button} from '../components/Button';
-import '../styles/auth.scss';
 
 import ilustationImg from '../assets/images/illustration.svg';
 import logoImg from '../assets/images/logo.svg';

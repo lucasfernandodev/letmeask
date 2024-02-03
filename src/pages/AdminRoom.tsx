@@ -11,7 +11,6 @@ import answerImg from "../assets/images/answer.svg";
 import checkImg from "../assets/images/check.svg";
 import deleteImg from "../assets/images/delete.svg";
 import logoImg from "../assets/images/logo.svg";
-import "../styles/rooms.scss";
 
 type RoomParams = {
   id: string;

@@ -1,6 +1,5 @@
 import { useState, FormEvent } from "react";
 import { useParams } from "react-router-dom";
-import "../styles/rooms.scss";
 import { useRoom } from "../hooks/useRoom";
 import { useAuth } from "../hooks/useAuth";
 import { database } from "../services/firebase";
