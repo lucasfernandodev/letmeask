@@ -8,35 +8,20 @@ import { RoomCode } from "../../components/RoomCode";
 import { database } from "../../services/firebase";
 import logoImg from "../../assets/images/logo.svg";
 import { useAuth } from "../../hooks/useAuth";
+import { useRoom } from '../../hooks/useRoom';
 
 
 type RoomParams = {
   id: string;
 };
 
-interface IQuestions{
-  id: string,
-  author: {
-    name: string;
-    avatar: string;
-};
-content: string;
-isHighlighted: boolean;
-likeCount: number;
-isAnswered: boolean;
-likeId: string | undefined,
-likes: Record<string, {
-    authorId: string;
-}>
-}
-
 export function Room() {
   const { user } = useAuth();
   const [newQuestion, setNewQuestion] = useState("");
   const params = useParams<RoomParams>();
   const roomId = params.id;
-  // const { questions, title } = useRoom(roomId);
-  const { questions, title } = {questions: [], title: roomId} as {questions: IQuestions[], title: string};
+  const { questions, title } = useRoom(roomId);
+
 
   async function handleCreateSendQuestion(event: FormEvent) {
     event.preventDefault();
