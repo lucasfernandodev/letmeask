@@ -1,24 +1,42 @@
+import style from './style.module.css';
 import { useState, FormEvent } from "react";
 import { useParams } from "react-router-dom";
-import { useRoom } from "../hooks/useRoom";
-import { useAuth } from "../hooks/useAuth";
-import { database } from "../services/firebase";
-import { Button } from "../components/Button";
-import { RoomCode } from "../components/RoomCode";
-import { Question } from "../components/Question";
-import logoImg from "../assets/images/logo.svg";
 import { idText } from "typescript";
+import { Button } from "../../components/Button";
+import { Question } from "../../components/Question";
+import { RoomCode } from "../../components/RoomCode";
+import { database } from "../../services/firebase";
+import logoImg from "../../assets/images/logo.svg";
+import { useAuth } from "../../hooks/useAuth";
+
 
 type RoomParams = {
   id: string;
 };
+
+interface IQuestions{
+  id: string,
+  author: {
+    name: string;
+    avatar: string;
+};
+content: string;
+isHighlighted: boolean;
+likeCount: number;
+isAnswered: boolean;
+likeId: string | undefined,
+likes: Record<string, {
+    authorId: string;
+}>
+}
 
 export function Room() {
   const { user } = useAuth();
   const [newQuestion, setNewQuestion] = useState("");
   const params = useParams<RoomParams>();
   const roomId = params.id;
-  const { questions, title } = useRoom(roomId);
+  // const { questions, title } = useRoom(roomId);
+  const { questions, title } = {questions: [], title: roomId} as {questions: IQuestions[], title: string};
 
   async function handleCreateSendQuestion(event: FormEvent) {
     event.preventDefault();
@@ -63,15 +81,15 @@ export function Room() {
   }
 
   return (
-    <div id="page-room">
+    <div id={style["page-room"]}>
       <header>
-        <div className="content">
+        <div className={style.content}>
           <img src={logoImg} alt="Letmeask" />
           <RoomCode code={roomId} />
         </div>
       </header>
 
-      <main className="content">
+      <main className={style.content}>
         <div className="room-title">
           <h1>Sala {title}</h1>
           {questions.length > 0 && <span>{questions.length} pergunta(s)</span>}
@@ -83,7 +101,7 @@ export function Room() {
             value={newQuestion}
           />
 
-          <div className="form-footer">
+          <div className={style["form-footer"]}>
             {user ? (
               <div className="user-info">
                 <img src={user.avatar} alt={user.name} />
@@ -150,3 +168,4 @@ export function Room() {
     </div>
   );
 }
+
