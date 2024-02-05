@@ -19,7 +19,10 @@ export function Question({ content, author, children, isAnswer = false, isHighli
       <p>{content}</p>
       <footer>
         <div className={style["user-info"]}>
-          <img src={author.avatar} alt={author.name} onError={el => {(el.target as HTMLImageElement).src=userImage as string}}/>
+          <img src={author.avatar} alt={author.name} onError={el => {
+            (el.target as HTMLImageElement).src=userImage as string;
+            (el.target as HTMLImageElement).classList.add(style.onError);
+            }}/>
           <span>{author.name}</span>
         </div>
         <div>{children}</div>

@@ -6,7 +6,7 @@
   gap: 24px;
   background: var(--white-details);
   border-radius: 8px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.01);
 }
 
 .question.Highlighted{
@@ -53,6 +53,9 @@
   overflow: hidden;
   position: relative;
   object-fit: cover;
+}
+
+.question footer .user-info img.onError{
   padding: 6px;
 }
 
