@@ -1,0 +1,120 @@
+#page-room > header .content{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 160px;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+#page-room > header .content > img{
+  width: 100%;
+  max-width: 100.26px;
+  object-fit: cover;
+  height: auto;
+  display: block;
+}
+
+.groupButtons{
+  display: flex;
+  gap: 9px;
+}
+
+.btnEncerrar{
+  padding: 10px 24px;
+  background: none;
+  border: 1px solid var(--purple);
+  color: var(--purple);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  height: 40px;
+  transition: 250ms linear;
+}
+
+.btnEncerrar:hover{
+  border: 1px solid var(--purple-hover);
+  color: var(--purple-hover);
+}
+
+
+
+#page-room > main.content{
+  width: 100%;
+  padding: 0px 320px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+}
+
+#page-room > main.content h1{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#page-room > main.content .room-title{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+#page-room > main.content .room-title span{
+  padding: 8px 16px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pink-dark);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white-background);
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+#page-room > main .question-list{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.actions{
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  min-width: 110px;
+  justify-content: flex-end;
+}
+
+.actions button{
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 0px;
+  color: var(--grady-medium);
+  cursor: pointer;
+}
+
+.actions button svg, .actions button img{
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.actions button:hover svg path,
+.actions button:hover svg circle{
+  stroke: var(--purple);
+}
+
+.actions button.delete:hover svg path{
+  stroke: var(--danger);
+}

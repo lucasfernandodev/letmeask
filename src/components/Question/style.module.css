@@ -8,6 +8,16 @@
   border-radius: 8px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.04);
 }
+
+.question.Highlighted{
+  background: #f4f0ff;
+  border: 1px solid #835AFD;
+}
+
+.question.answered{
+  background: #DBDCDD;
+}
+
 .question > p{
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -48,4 +58,8 @@
 
 .question footer span{
   color: var(--gray-dark);
+}
+
+.question.Highlighted footer .user-info span {
+  color: #29292E;
 }

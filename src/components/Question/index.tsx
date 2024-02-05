@@ -15,7 +15,7 @@ type QuestionProps = {
 
 export function Question({ content, author, children, isAnswer = false, isHighlighted = false }: QuestionProps) {
   return (
-    <div className={`${style.question} ${isAnswer ? 'answered' : ''} ${isHighlighted ? 'Highlighted' : ''}`}>
+    <div className={`${style.question} ${isAnswer ? style.answered : ''} ${isHighlighted ? style.Highlighted : ''}`}>
       <p>{content}</p>
       <footer>
         <div className={style["user-info"]}>

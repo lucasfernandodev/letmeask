@@ -1,5 +1,5 @@
 import * as React from "react"
-const DeleteSVG = (props: React.ComponentProps<'svg'>) => (
+const AnswerSVG = (props: React.ComponentProps<'svg'>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={24}
@@ -12,8 +12,9 @@ const DeleteSVG = (props: React.ComponentProps<'svg'>) => (
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
-      d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6h14Z"
+      d="M12 18h6a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h1.5v3l4.5-3Z"
+      clipRule="evenodd"
     />
   </svg>
 )
-export default DeleteSVG
+export default AnswerSVG
