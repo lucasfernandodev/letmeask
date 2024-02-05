@@ -26,47 +26,10 @@
 Projeto desenvolvido durante a **NLW - Next Level Week** oferecida pela [Rocketseat](https://blog.rocketseat.com.br/primeira-next-level-week/).
 O NLW é uma experiência online com muito conteúdo prático, desafios e hacks onde o conteúdo fica disponível durante uma semana.
 
-
-## 📚 Atividades realizadas
-
-1º dia
-- [x] Configuração de ambiente de desenvolvimento
-- [x] Configurações iniciais do Firebase
-
-2º dia
-- [x] Autenticação de usuarios
-- [x] Criação de sala
-- [x] Roteamento e navegação
-
-3º dia
-- [x] Criação de sala
-- [x] Controller de usuarios
-- [x] Respondendo e criando perguntas
-- [x] Crindo hook useRom
-
-4º dia
-- [x] Entrutura de perguntas
-- [x] Hook useRoom
-- [x] Funcionalidade de like
-- [x] Controle de sala (admin)
-- [x] Controle de perguntas
-
-5º dia
-- [x] Destaque de perguntas respondidas
-- [x] Marca pergunta respondida
-- [x] Hospedando projeto
-
-Bônus
-- [ ] Tema dark
-- [ ] Responsividade
-- [ ] Versão PWA
-- [ ] Outro banco de dados
-
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="./letmeask-dev.web.app_.png" width="850px">
-
 </p>
 
 ---
@@ -106,9 +69,9 @@ $ yarn start
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
-
--   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
+- React
+- Typescript
+- React Router Dom
 
 > Veja o arquivo  [package.json](./package.json)
 
@@ -117,10 +80,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🦸 Autor
 
-<a href="https://lucasfernando.dev/">
+<a href="https://lucasfernandodev.github.io/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/20525486?v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Lucas Fernando</b></sub></a> <a href="https://lucasfernando.dev" title="Lucas Fernando">🚀</a>
+ <sub><b>Lucas Fernando</b></sub></a> <a href="https://lucasfernandodev.github.io/" title="Lucas Fernando">🚀</a>
  <br />
 
 ---
@@ -129,4 +92,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Este projeto esta sobe a licença [MIT](./LICENSE).
 
-Feito com 💜 por Lucas Fernando 👋 [Entre em contato!](https://www.linkedin.com/in/lucas-fernando-a19ab5213/)
+Feito com 💜 por Lucas Fernando 👋 [Entre em contato!](https://www.linkedin.com/in/frontlucasfernandodev/)
