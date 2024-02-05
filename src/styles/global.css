@@ -13,9 +13,11 @@
   --purple: #835AFD;
   --purple-hover: #6F4BD8;
   --red: #EA4335;
+  --pink-dark: #E559F9;
   --black: #29292E;
 
   --gray-medium: #A8A8B3;
+  --gray-dark: #737380;
 
   --input-color: #29292E;
 
@@ -37,6 +39,7 @@ html,
 body {
   background: var(--white-background);
   height: 100%;
+  font-weight: 400;
 }
 
 body,

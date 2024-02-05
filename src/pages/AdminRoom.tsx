@@ -1,7 +1,7 @@
 import { useParams, useHistory } from "react-router-dom";
 
 import { Button } from "../components/Button";
-import { RoomCode } from "../components/RoomCode";
+import { RoomCode } from "../components/RoomCode/index.tsx";
 import { Question } from "../components/Question";
 
 import { database } from "../services/firebase";

@@ -4,16 +4,16 @@ import { useParams } from "react-router-dom";
 import { idText } from "typescript";
 import { Button } from "../../components/Button";
 import { Question } from "../../components/Question";
-import { RoomCode } from "../../components/RoomCode";
+import { RoomCode } from "../../components/RoomCode/index.tsx";
 import { database } from "../../services/firebase";
 import logoImg from "../../assets/images/logo.svg";
 import { useAuth } from "../../hooks/useAuth";
 import { useRoom } from '../../hooks/useRoom';
 
-
 type RoomParams = {
   id: string;
 };
+
 
 export function Room() {
   const { user } = useAuth();
@@ -21,7 +21,7 @@ export function Room() {
   const params = useParams<RoomParams>();
   const roomId = params.id;
   const { questions, title } = useRoom(roomId);
-
+  
 
   async function handleCreateSendQuestion(event: FormEvent) {
     event.preventDefault();
@@ -75,7 +75,7 @@ export function Room() {
       </header>
 
       <main className={style.content}>
-        <div className="room-title">
+        <div className={style["room-title"]}>
           <h1>Sala {title}</h1>
           {questions.length > 0 && <span>{questions.length} pergunta(s)</span>}
         </div>
@@ -104,7 +104,7 @@ export function Room() {
           </div>
         </form>
 
-        <div className="question-list">
+        <div className={style["question-list"]}>
           {questions.map((question) => {
             return (
               <Question
@@ -116,7 +116,7 @@ export function Room() {
               >
                 {!question.isAnswered && (
                   <button
-                    className={`like-button ${question.likeId ? "liked" : ""}`}
+                    className={`${style.buttonLike} ${question.likeId ? style.liked : ""}`}
                     type="button"
                     aria-label="Marcar como gostei"
                     onClick={() =>

@@ -1,7 +1,10 @@
 #page-room{
-  width: 100vw;
+  width: 100%;
   background: var(--white-background);
   min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
+  padding-bottom: 150px;
 }
 
 #page-room > header .content{
@@ -22,41 +25,6 @@
   display: block;
 }
 
-#page-room > header button{
-  display: flex;
-  width: 160px;
-  height: 40px;
-  align-items: center;
-  padding: 0px;
-  border: 1px solid var(--purple);
-  background: none;
-  border-radius: 8px;
-}
-
-#page-room > header button > div{
-  background: var(--purple);
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px 0px 0px 8px;
-  cursor: pointer;
-  transition: 250ms linear;
-}
-
-#page-room > header button > div:hover{
-  background: var(--purple-hover);
-}
-
-#page-room > header button > span{
-  padding-left: 12px;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--black);
-}
-
 #page-room > main.content{
   width: 100%;
   padding: 0px 320px;
@@ -68,7 +36,26 @@
 #page-room > main.content h1{
   font-size: 24px;
   font-weight: bold;
+}
+
+#page-room > main.content .room-title{
+  display: flex;
+  align-items: center;
+  gap: 16px;
   margin-bottom: 24px;
+}
+
+#page-room > main.content .room-title span{
+  padding: 8px 16px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pink-dark);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white-background);
+  font-family: "Roboto", sans-serif;
 }
 
 #page-room > main form,
@@ -146,4 +133,36 @@
 
 #page-room > main form .form-footer > button:hover{
   background: var(--purple-hover);
+}
+
+#page-room > main .question-list{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.buttonLike{
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.buttonLike span{
+  height: 16px;
+}
+
+.buttonLike svg{
+  width: 100%;
+  max-width: 24px;
+  display: block;
+}
+
+.buttonLike svg path{
+  stroke: var(--purple);
 }

@@ -1,0 +1,35 @@
+
+.room-code{
+  display: flex;
+  width: 160px;
+  height: 40px;
+  align-items: center;
+  padding: 0px;
+  border: 1px solid var(--purple);
+  background: none;
+  border-radius: 8px;
+}
+
+.room-code > div{
+  background: var(--purple);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 0px 0px 8px;
+  cursor: pointer;
+  transition: 250ms linear;
+}
+
+.room-code > div:hover{
+  background: var(--purple-hover);
+}
+
+.room-code > span{
+  padding-left: 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+}
